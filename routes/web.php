@@ -10,4 +10,4 @@ Route::group(['prefix' => 'api'], function () {
     Route::get('get/posts', 'ApiController@getPosts');
 });
 
-Route::get('{all?}', 'HomeController@index')->name('home');
+Route::get('{any}', 'HomeController@index')->where('any', '.*')->name('home');
