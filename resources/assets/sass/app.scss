@@ -4,3 +4,13 @@
 
 // Variables
 @import "variables";
+
+@import "common";
+
+@import "components/Sidebar";
+@import "components/Content";
+
+body {
+  margin: 0;
+  padding: 0;
+}

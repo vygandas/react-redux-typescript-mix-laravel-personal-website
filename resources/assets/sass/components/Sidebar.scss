@@ -1,0 +1,33 @@
+@import "../variables";
+@import "../mixins";
+
+.vp-sidebar {
+  position: absolute;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: $sidebar-width-xs;
+
+  @include breakpoint(sm) {
+    width: $sidebar-width-sm;
+  }
+
+  @include breakpoint(md) {
+    width: $sidebar-width-md;
+  }
+
+  @include box-shadow(0, 0, 20px, rgba(0, 0, 0, 0.2));
+
+  .vp-sidebar-image {
+    text-align: center;
+
+    img {
+      max-width: 40%;
+      @include box-shadow(0, 0, 20px, rgba(0, 0, 0, 0.5));
+    }
+
+  }
+
+}

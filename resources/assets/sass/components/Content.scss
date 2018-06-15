@@ -1,0 +1,11 @@
+@import "../variables";
+@import "../mixins";
+
+.vp-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: $sidebar-width-lg;
+
+}

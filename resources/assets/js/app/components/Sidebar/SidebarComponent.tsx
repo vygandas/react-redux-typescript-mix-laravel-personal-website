@@ -11,7 +11,7 @@ class SidebarComponent extends Component<{}, {}> {
 
                 {appDataHelper('sidebar_image') &&
                     <section className="vp-sidebar-image">
-                        <img src={`/storage/${appDataHelper('sidebar_image')}`} className="img-responsive"/>
+                        <img src={`/storage/${appDataHelper('sidebar_image')}`} className="img-responsive img-rounded"/>
                     </section>
                 }
 

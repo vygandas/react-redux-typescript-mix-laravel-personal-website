@@ -17,11 +17,13 @@ export default class App extends Component {
                     <div>
                         <SidebarComponent />
 
-                        <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/about" component={About} />
-                            <Route component={NotFound}/>
-                        </Switch>
+                        <div className="vp-content">
+                            <Switch>
+                                <Route exact path="/" component={Home} />
+                                <Route path="/about" component={About} />
+                                <Route component={NotFound}/>
+                            </Switch>
+                        </div>
                     </div>
                 </Router>
             </Provider>
