@@ -2,7 +2,7 @@
 @import "../mixins";
 
 .vp-sidebar {
-  position: absolute;
+  position: fixed;
   background-color: white;
   top: 0;
   bottom: 0;
@@ -20,14 +20,24 @@
 
   @include box-shadow(0, 0, 20px, rgba(0, 0, 0, 0.2));
 
-  .vp-sidebar-image {
-    text-align: center;
+  .vp-sidebar-inner {
+    padding: 25px;
 
-    img {
-      max-width: 40%;
-      @include box-shadow(0, 0, 20px, rgba(0, 0, 0, 0.5));
+    .vp-sidebar-image {
+      text-align: center;
+
+      img {
+        max-width: 40%;
+        @include box-shadow(0, 0, 20px, rgba(0, 0, 0, 0.5));
+      }
+
     }
 
   }
+
+  @import "SidebarContent/Title";
+  @import "SidebarContent/ShortSummary";
+  @import "SidebarContent/Navigation";
+  @import "SidebarContent/Contacts";
 
 }

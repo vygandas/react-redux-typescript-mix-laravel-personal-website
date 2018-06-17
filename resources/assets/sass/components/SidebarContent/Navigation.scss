@@ -1,0 +1,38 @@
+.vp-sidebar-navigation {
+  margin-bottom: 25px;
+
+  >nav {
+
+    >ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      >li {
+
+        >a {
+          display: block;
+          padding: 8px 0 8px 0;
+          text-decoration: none;
+          font-size: 18px;
+          color: #3c3c3c;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &.active {
+            color: #575757;
+            text-decoration: underline;
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

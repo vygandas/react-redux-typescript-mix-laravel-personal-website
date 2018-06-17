@@ -1,0 +1,67 @@
+.vp-sidebar-contacts {
+
+  >ul.main {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 15px 0;
+
+    >li {
+      display: block;
+      margin-bottom: 10px;
+
+      >a {
+        display: block;
+        color: #2c3338;
+        font-size: 18px;
+        text-decoration: none;
+
+        >.fa {
+          margin-right: 10px;
+        }
+
+      }
+
+    }
+
+  }
+
+  >ul.social {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    >li {
+      display: inline-block;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      >a {
+        display: block;
+        width: 36px;
+        height: 36px;
+        background-color: whitesmoke;
+        border: 1px solid #d8dcde;
+        color: #2c3338;
+        font-size: 24px;
+        text-align: center;
+
+        &:hover {
+          background-color: #e8e8e8;
+        }
+
+        >.fa {
+          display: inline-block;
+          vertical-align: middle;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

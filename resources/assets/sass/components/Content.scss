@@ -2,10 +2,14 @@
 @import "../mixins";
 
 .vp-content {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: $sidebar-width-lg;
+
+  .vp-content-inner {
+    padding: 25px;
+  }
 
 }

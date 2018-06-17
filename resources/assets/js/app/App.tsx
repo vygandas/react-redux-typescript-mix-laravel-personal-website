@@ -10,6 +10,13 @@ import SidebarComponent from "./components/Sidebar/SidebarComponent";
 
 export default class App extends Component {
 
+    componentDidMount(): void {
+        const loaderElement = document.getElementById('preloader');
+        if (loaderElement) {
+            loaderElement.style.display = 'none';
+        }
+    }
+
     render() : JSX.Element {
         return (
             <Provider store={store}>
@@ -18,11 +25,13 @@ export default class App extends Component {
                         <SidebarComponent />
 
                         <div className="vp-content">
-                            <Switch>
-                                <Route exact path="/" component={Home} />
-                                <Route path="/about" component={About} />
-                                <Route component={NotFound}/>
-                            </Switch>
+                            <div className="vp-content-inner">
+                                <Switch>
+                                    <Route exact path="/" component={Home} />
+                                    <Route path="/about" component={About} />
+                                    <Route component={NotFound}/>
+                                </Switch>
+                            </div>
                         </div>
                     </div>
                 </Router>
